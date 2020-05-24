@@ -1,0 +1,22 @@
+h3{
+    text-align: center;
+    font-size: 30px;
+}
+h4{
+    text-align: left;
+    font-size: 25px;
+    font-style: oblique;
+}
+
+
+.form-control{
+    width: 80%;
+}
+
+.form-group{
+    text-align: center;
+}
+
+div{
+    text-align: left;
+}

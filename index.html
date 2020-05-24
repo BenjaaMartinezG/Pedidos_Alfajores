@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>B al Cuadrado</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index.css"> 
+</head>
+<body>
+    <nav class="navbar bg-success">
+        <ul class="list-inline">
+            
+                <h3>Pedidos de Alfajores B al Cuadrado</h3> 
+            
+        </ul>
+    </nav>
+ 
+
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h4>Ingrese el Pedido</h4>
+                        </div>
+                        <div class="form-group"><hr></div>
+                        <div class="form-group"><input type="text" id="id" placeholder="Nombre" class="form-control"></div>
+                        <div class="form-group"><input min="1" type="number" id="id" placeholder="Cantidad" class="form-control"></div>
+                        <div class="form-group"><input list="type"  id="id" placeholder="Tipo de Caja" class="form-control"></div>
+                        <div class="form-group"><input type="date" id="id" placeholder="Fecha de entrega" class="form-control"></div>
+                        <div class="form-group"><input list="yesnot" type="text" id="id" placeholder="Delivery" class="form-control"></div>
+                        <datalist id="yesnot">
+
+                            <option value="Si">
+                            <option value="No">
+                          
+                          </datalist>  
+                        <datalist id="type">
+                            <option value="3">
+                            <option value="6">
+                            <option value="10">
+                            <option value="15">
+
+                        </datalist>                
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Direccion" id="direction" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-success"><i class="fas fa-plus-circle"></i>Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-10">
+            <table class="table table-bordered text-center">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Cantidad</th>
+                        <th>Tipo de Caja</th>
+                        <th>Fecha de entrega</th>
+                        <th>Delivery</th>
+                        <th>Direccion</th>
+
+                    </tr>
+
+                </thead>
+                <tbody id="loadTask"></tbody>
+                
+            </table>
+        </div>
+        
+    </div>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+
+    <script type="text/javascript" src="index.js"></script>
+    
+</body>
+</html>
