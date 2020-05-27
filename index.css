@@ -2,21 +2,31 @@ h3{
     text-align: center;
     font-size: 30px;
 }
+.list-inline{
+    margin: auto;
+}
 h4{
     text-align: left;
     font-size: 25px;
-    font-style: oblique;
+    font-style: italic;
 }
-
-
 .form-control{
     width: 80%;
 }
-
 .form-group{
     text-align: center;
 }
-
 div{
     text-align: left;
+}
+textarea{
+    margin: 20px;
+    margin-top: -10px;
+}
+.col-lg-10{
+    margin: 30px;
+}
+.col-lg-9{
+    margin: 10px;
+
 }
